@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CureLine Hospital</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    
+
 </head>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <body>
     <header>
@@ -46,6 +53,64 @@
             </div>
         </div>
     </section>
+    <section class="awards">
+        <h2>Honours & Recognitions</h2>
+    
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+    
+                <!-- Slide 1 -->
+                <div class="swiper-slide award-card">
+                    <img src="images/award1.jpg" alt="Award 1">
+                    <h3>Best Multi-Speciality Hospital – Hyderabad (2015)</h3>
+                    <p>
+                        Awarded by The Week and Nielsen for excellence in multidisciplinary patient care.<br>
+                        Recognized for leadership in diagnostics, surgery, and recovery.<br>
+                        Ranked #1 for consistent performance and patient satisfaction in Hyderabad.
+                    </p>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide award-card">
+                    <img src="images/award2.jpg" alt="Award 2">
+                    <h3>Most Trusted Hospital – Reader’s Digest (2019)</h3>
+                    <p>
+                        Chosen by consumers in a national survey for trust, ethics, and transparency.<br>
+                        Praised for personalized care and patient-first policies.<br>
+                        CureLine stood out among hundreds of hospitals for reliability. 
+                    </p>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="swiper-slide award-card">
+                    <img src="images/award3.jpg" alt="Award 3">
+                    <h3>Excellence in Healthcare Innovation</h3>
+                    <p>
+                        Awarded for integrating AI-based diagnostics and digital patient systems.<br>
+                        Recognized for modernizing emergency response and ICU protocols.<br>
+                        CureLine leads with innovation in surgery, tech, and telemedicine.
+
+                    </p>
+                </div>
+    
+            </div>
+            <!-- Optional navigation -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,         // Only 1 visible always
+            spaceBetween: 0,          // No extra space
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
+
+      
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Cureline Hospital. All rights reserved.</p>
