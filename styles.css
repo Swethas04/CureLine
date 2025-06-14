@@ -1,0 +1,167 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+.logo h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+/* NAVBAR */
+.navbar {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.nav-links li a:hover {
+    color: #00c2cb;
+}
+.hero-image {
+    background: url('images/Cureline_Banner.png') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.2);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+    left: 5%;
+    right:5%;
+    top: 60%;
+    display: flex;
+    gap: 20px;
+}
+
+/* BUTTON STYLES */
+.btn {
+    background-color: #0099cc;
+    color: white;
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 500px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00c2cb;
+}
+
+
+/* ABOUT SECTION */
+.about {
+    padding: 2.5rem 2rem;
+    background-color: #f4f8fb;
+    text-align: center;
+}
+
+.about h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* APPOINTMENT SECTION */
+.appointment-preview {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.appointment-preview h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.appointment-preview p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.footer-content p {
+    margin: 0.4rem 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero-overlay .btn,
+    .hero-overlay .btn-outline {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
