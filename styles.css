@@ -189,6 +189,62 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+/*Awars*/
+.awards {
+    background-color: #f4f8fb;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.awards h2 {
+    color: #003366;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.award-slide {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.award-slide img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.award-slide h3 {
+    font-size: 1.5rem;
+    color: #0099cc;
+    margin-bottom: 0.5rem;
+}
+
+.award-slide p {
+    font-size: 1rem;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.swiper {
+    padding-bottom: 3rem;
+}
+.swiper-pagination {
+    margin-top: 2rem;
+    position: relative !important;
+    bottom: 0 !important;
+    text-align: center; 
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
 
 /* APPOINTMENT SECTION */
 .appointment-preview {
