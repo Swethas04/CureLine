@@ -100,25 +100,94 @@ body {
 .btn:hover {
     background-color: #00c2cb;
 }
-
-
-/* ABOUT SECTION */
-.about {
-    padding: 2.5rem 2rem;
-    background-color: #f4f8fb;
-    text-align: center;
+/*Message From Chairman*/
+.msg {
+    padding: 4rem 2rem;
+    color: #333;
 }
 
-.about h2 {
-    color: #003366;
+.msg-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.msg-text {
+    flex: 1 1 500px;
+}
+
+.msg-text h2 {
+    color: #00338D;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1rem;
+.msg-text p {
+    font-size: 1.1rem;
     line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.msg-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.msg-image img {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 4rem 2rem;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+.about-text h2 {
+    color: #00338D;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* APPOINTMENT SECTION */
